@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:3001/api/user
+@email = yhonii@gmail.com
+@password = 1212
+
+### @name signup
+POST {{baseUrl}}/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Yhoni Mardusa",
+    "email" : "yhoniii@gmail.com",
+    "password":"1211"
+}
+
+### @name login
+POST {{baseUrl}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "yhoniii@gmail.com",
+    "password": "1211"
+}

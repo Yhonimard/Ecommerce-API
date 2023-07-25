@@ -1,0 +1,5 @@
+@baseurl = http://localhost:3001
+
+### @name getNote
+GET {{baseurl}} HTTP/1.1
+

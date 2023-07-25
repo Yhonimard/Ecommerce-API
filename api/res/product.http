@@ -1,0 +1,46 @@
+@url = http://localhost:3000
+@baseUrl = http://localhost:3001/api/products
+@prodURL = https://yhonimard.up.railway.app/api
+ 
+
+### @name GetProduct
+GET {{prodURL}}/products/get/ HTTP/1.1
+
+
+### @name getProductByID
+@productId = 6417c26c19b3c4bdbcf856bd
+GET {{baseUrl}}/products/get/{{productId}} HTTP/1.1
+
+
+### @name createProduct
+POST {{prodURL}}/products/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"yhoniaa",
+    "price" : 1,
+    "category" : "cloth",
+    "description": "description"
+} 
+
+
+### @name updateProduct
+@putId = 64a038e3df0f4068e3e222f5
+PUT {{baseUrl}}/products/patch/{{putId}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"patch testindoang",
+    "price":15,
+    "category":"patch testssss", 
+    "description":"patch testing"
+}
+
+
+### @name deleteProduct
+@id = 64a038e3df0f4068e3e222f5
+DELETE {{baseUrl}}/products/delete/{{id}} HTTP/1.1
+
+
+###
+GET {{baseUrl}} HTTP/1.1
