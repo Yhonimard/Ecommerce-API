@@ -1,23 +1,17 @@
 import { Container } from "@mui/material";
-import Banner from "./banner/banner";
+import Header from "./header/Header";
 import Brand from "./brand/Brand";
-import Header from "./header/header";
-import Content from "./content/content";
+import Content from "./content/Content";
+import Banner from "./banner/Banner";
 
 const Home = () => {
   return (
-    <>
+    <Container maxWidth="xl" sx={{ mb: 5 }}>
       <Header />
-      <Container
-        sx={{
-          marginTop: "50px",
-        }}
-      >
-        <Brand />
-        <Banner />
-        <Content />
-      </Container>
-    </>
+      <Brand />
+      <Banner />
+      <Content />
+    </Container>
   );
 };
 

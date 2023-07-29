@@ -17,6 +17,8 @@ const app = express();
 connectDB();
 const port = process.env.PORT || 3001;
 
+const datas = port;
+
 app.use(bodyparser.json());
 app.use(cors());
 

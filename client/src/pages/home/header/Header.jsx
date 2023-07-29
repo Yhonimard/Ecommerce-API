@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { Box, Typography, Stack, Button } from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 import headerSectImg from "../../../assets/HeaderSection.png";
 import {
   CustomHeaderBox,
@@ -10,11 +9,11 @@ import {
 
 const Header = () => {
   return (
-    <CustomHeaderBox direction="row">
+    <CustomHeaderBox direction="row" mt={2}>
       <CustomHeaderBoxImg>
         <img
           src={headerSectImg}
-          alt="headerimg"
+          alt="header"
           style={{ objectFit: "cover", display: "block" }}
           width="100%"
           height="auto"

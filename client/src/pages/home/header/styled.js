@@ -2,6 +2,7 @@ import { Box, Button, styled } from "@mui/material";
 
 styled(Box)(() => ({}));
 const CustomHeaderBox = styled(Box)(({ theme }) => ({
+  marginBottom: "50px",
   display: "flex",
   flexDirection: "row",
   width: "100%",
